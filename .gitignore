@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+/douyin_tiktok_scraper.egg-info/
+/build/
+.idea/
