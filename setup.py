@@ -14,7 +14,7 @@ with open("README.md", "r", encoding='utf8') as fh:
 setuptools.setup(
     name='douyin_tiktok_scraper',
     author='Evil0ctal',
-    version='1.2.1',
+    version='1.2.3',
     license='MIT License',
     description='Douyin/TikTok async data scraper.',
     long_description=long_description,
@@ -28,7 +28,7 @@ setuptools.setup(
         'aiohttp',
         "orjson",
         "tenacity",
-        "execjs",
+        "PyExecJS",
         "Brotli",
     ],
     classifiers=[
