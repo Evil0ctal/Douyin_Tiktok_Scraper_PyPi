@@ -14,14 +14,19 @@ with open("README.md", "r", encoding='utf8') as fh:
 setuptools.setup(
     name='douyin_tiktok_scraper',
     author='Evil0ctal',
-    version='1.2.3',
+    version='1.2.8',
     license='MIT License',
     description='Douyin/TikTok async data scraper.',
     long_description=long_description,
     long_description_content_type="text/markdown",
     author_email='Evil0ctal1985@gmail.com',
     url='https://github.com/Evil0ctal/Douyin_TikTok_Download_API',
-    packages=setuptools.find_packages(),
+    packages=setuptools.find_packages(
+        exclude=['tests', 'tests.*', '*.tests', '*.tests.*']
+    ),
+    package_data={
+        'douyin_tiktok_scraper': ['X-Bogus.js'],
+    },
     keywords='TikTok, Douyin, 抖音, Scraper, Crawler, API, Download, Video, No Watermark, Async',
     # 依赖包
     install_requires=[
